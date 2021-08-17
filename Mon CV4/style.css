@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: grey;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 1000px;
+    min-height: 1500px;
+    background-image: linear-gradient(to top, #80a139, #b97dac);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 10px rgb(0,0,0,0.1);
+}
+
+/*ma photo et mon nom*/
+.left_Side{
+    width: 400px;
+}
+.container .left_Side{
+    position: relative;
+    background-image: linear-gradient(to top, #80a139, #b97dac);
+    padding: 40px;
+}
+.profile_text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile_text .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile_text .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nom h1{
+    color: #000;
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profile_text h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+/*Mes informations de contact*/
+.contactInfo{
+    padding-top: 50px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.contactInfo{
+    padding-top: 50px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.perso{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.oto ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+.tittre{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+/*Mon parcours scolaire*/
+.contactInfo_education li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+.contactInfo_education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo_education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo_education h4{
+    color: #fff;
+    font-weight: 300;
+}
+
+/*Mes differents niveau de competence*/
+.contactInfo_lang .pourcentage {
+    position: relative;
+    width: 80%;
+    height: 6px;
+    background: #081921;
+    display: inline-block;
+    margin-top: 5px;
+}
+.contactInfo_lang li{
+    list-style: none;
+    color: #fff;
+}
+.contactInfo_lang ul li ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+.contactInfo_lang ul li ul li li .fa{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.contactInfo_lang .pourcentage div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+
+.contactInfo_lang ul li ul li .icon{
+    display: inline-block;
+    width: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+/*Certains de mes experiences professionnelles*/
+.presentation{
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: "Calisto MT";
+}
+.nom{
+    font-size: 1.5em;
+}
+.prenom{
+    font-size: 1.5em;
+    color: #03a9f4;
+}
+.right_Side{
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px ;
+    position: relative;
+    background:#fff;
+    margin-left: -50px;
+    padding: 90px;
+}
+.right_Side .profil{
+    margin-bottom: 100px;
+}
+.about{
+    margin-top: 40px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.tittre2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .annee{
+    min-width: 200px;
+}
+.about .box .annee h5{
+    text-transform: uppercase;
+    color: #848c90;
+}
+.about .box .test{
+    border-left: 2px solid;
+    height: 80px;
+    top: 60px;
+    list-style: none;
+}
+.about .box .test {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.about .box .test ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.about .box .test h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/*Certains de mes prerequis*/
+.about_expe .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about_expe .box h4{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 500;
+}
+.about_expe .box .pourcentage{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.about_expe .box .pourcentage div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+/*Mes centres d'interets ou mes passions*/
+
+
+
+
+@media (max-width: 1344px){
+    .container
+    {
+        margin: 0px;
+        grid-template-columns: repeat(1,1fr);
+        background:#fff;
+    }
+    .about_inter ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .left_Side{
+        width: 100%;
+}
+
+@media (max-width: 600px){
+    .container
+    {
+        margin: 20px;
+    }
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .annee{
+        margin-bottom: 5px;
+    }
+    .about_inter ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about_expe .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
