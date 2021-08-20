@@ -14,12 +14,10 @@ body{
 }
 .container{
     position: relative;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
     max-width: 1000px;
+    justify-content: center;
     min-height: 1500px;
-    background-image: linear-gradient(to top, #80a139, #b97dac);
+    background-image: linear-gradient(to top, #80a139,#af74a2 );
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 10px rgb(0,0,0,0.1);
@@ -31,7 +29,7 @@ body{
 }
 .container .left_Side{
     position: relative;
-    background-image: linear-gradient(to top, #80a139, #b97dac);
+    background-image: linear-gradient(to top, #80a139, #af74a2);
     padding: 40px;
 }
 .profile_text{
@@ -152,9 +150,22 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr)
 }
+.icons {
+    list-style: none;
+    color: #fff;
+}
+.icons ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.icons ul li{
+    text-align: center;
+}
 .contactInfo_lang ul li ul li li .fa{
     margin-right: 5px;
     font-size: 20px;
+    align-items: center;
 }
 
 .contactInfo_lang .pourcentage div{
@@ -180,10 +191,12 @@ body{
 }
 .nom{
     font-size: 1.5em;
+    color: #A37E88;
+
 }
 .prenom{
     font-size: 1.5em;
-    color: #03a9f4;
+    color: #9F8280;
 }
 .right_Side{
     border-top-left-radius: 200px;
@@ -203,7 +216,7 @@ body{
     margin-bottom: 0;
 }
 .tittre2{
-    color: #003147;
+    color: #9F8280;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 30px;
@@ -221,7 +234,7 @@ body{
     color: #848c90;
 }
 .about .box .test{
-    border-left: 2px solid;
+    border-left: 6px solid #9F8280;
     height: 80px;
     top: 60px;
     list-style: none;
@@ -236,7 +249,7 @@ body{
 }
 .about .box .test h4{
     text-transform: uppercase;
-    color: #2a7da2;
+    color: #9F8280;
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -274,18 +287,46 @@ body{
 
 
 
-@media (max-width: 1344px){
-    .container
-    {
-        margin: 0px;
-        grid-template-columns: repeat(1,1fr);
+@media (max-width: 1400px)
+{
+    .container .left_Side{
+        position: relative;
+       width: auto;
+    }
+
+    .container{
+        position: relative;
+    justify-content: center;
+        display: inline-block;
+    }
+    
+    /*ma photo et mon nom*/
+    
+    .profile_text{
+        position: relative;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    
+    /*Mes informations de contact*/
+    .icons ul{
+        list-style: none;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    .right_Side{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px ;
+        position: relative;
         background:#fff;
+        margin-left: 0px;
+        padding: 90px;
     }
-    .about_inter ul{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .left_Side{
-        width: 100%;
+   
+    
 }
 
 @media (max-width: 600px){
